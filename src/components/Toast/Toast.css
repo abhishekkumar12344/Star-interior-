@@ -1,0 +1,8 @@
+.toast {
+  position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(80px);
+  background: var(--navy); color: #fff; border: 1px solid var(--gold); padding: 14px 24px;
+  border-radius: 100px; z-index: 500; transition: .45s; display: flex; gap: 10px;
+  align-items: center; box-shadow: var(--shadow); font-size: 14.5px; max-width: 90vw;
+}
+.toast.show { transform: translateX(-50%) translateY(0); }
+.toast i { width: 28px; height: 28px; border-radius: 50%; background: var(--gold); display: grid; place-items: center; color: var(--navy); font-style: normal; flex-shrink: 0; }

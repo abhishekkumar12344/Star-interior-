@@ -1,0 +1,19 @@
+.contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 28px; margin-top: 48px; }
+.c-info { display: flex; flex-direction: column; gap: 14px; }
+.c-card { background: var(--navy); color: #fff; border-radius: 16px; padding: 20px 22px; display: flex; gap: 16px; align-items: center; border: 1px solid var(--line); transition: .3s; }
+.c-card:hover { transform: translateX(6px); }
+.c-card .ic { width: 52px; height: 52px; border-radius: 14px; background: rgba(196, 154, 69, .15); border: 1px solid var(--line); display: grid; place-items: center; flex-shrink: 0; }
+.c-card .ic svg { width: 24px; height: 24px; fill: var(--gold-2); }
+.c-card h4 { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-2); }
+.c-card p { font-size: 16px; }
+.c-card small { color: #8FA0B8; }
+.form-card { background: #fff; border-radius: 20px; padding: 36px; border: 1px solid #E9E1CC; box-shadow: var(--shadow); }
+.form-card h3 { font-family: var(--font-display); font-size: 26px; color: var(--navy); }
+.form-card > p { color: var(--muted); font-size: 15px; margin: 6px 0 20px; }
+
+@media (max-width: 1080px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .form-card { padding: 24px 20px; }
+}

@@ -1,0 +1,21 @@
+.values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 44px; }
+.value-card { background: #fff; border: 1px solid #E9E1CC; border-radius: 18px; padding: 30px; text-align: center; transition: .35s; }
+.value-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: var(--gold); }
+.value-card h3 { font-family: var(--font-display); color: var(--navy); margin: 12px 0 8px; }
+.value-card p { color: var(--muted); font-size: 15px; font-weight: 300; }
+
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 44px; }
+.team-card { background: #fff; border-radius: 20px; overflow: hidden; border: 1px solid #E9E1CC; text-align: center; transition: .4s; }
+.team-card:hover { transform: translateY(-8px); box-shadow: var(--shadow); }
+.team-card img { height: 360px; width: 100%; object-fit: cover; }
+.team-card .t-body { padding: 22px; }
+.team-card h3 { font-family: var(--font-display); color: var(--navy); font-size: 22px; }
+.team-card span { color: var(--gold-dark); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; font-weight: 600; }
+.team-card p { color: var(--muted); font-size: 14px; margin-top: 8px; font-weight: 300; }
+
+@media (max-width: 1080px) {
+  .values-grid, .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .values-grid, .team-grid { grid-template-columns: 1fr; }
+}

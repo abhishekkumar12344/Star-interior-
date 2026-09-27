@@ -1,0 +1,2 @@
+/* ContactPage-specific overrides (the form/info card styles live in ContactForm.css since they are shared with the HomePage contact section) */
+.contact-grid { margin-top: 40px; }

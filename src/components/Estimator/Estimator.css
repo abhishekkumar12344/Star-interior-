@@ -1,0 +1,22 @@
+.estimator {
+  background: var(--navy); border-radius: 22px; padding: 44px; color: #fff;
+  border: 1px solid var(--gold); display: grid; grid-template-columns: 1fr 1fr; gap: 36px;
+  margin-top: 50px; position: relative; overflow: hidden;
+}
+.estimator::after { content: '₹'; position: absolute; right: -10px; bottom: -40px; font-family: var(--font-display); font-size: 260px; opacity: .05; line-height: 1; }
+.est-control { margin-bottom: 20px; }
+.est-control label { display: flex; justify-content: space-between; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-2); margin-bottom: 10px; }
+.est-pills { display: flex; gap: 10px; flex-wrap: wrap; }
+.est-pill { padding: 10px 18px; border-radius: 100px; border: 1px solid rgba(196, 154, 69, .5); background: transparent; color: #fff; font-size: 13px; letter-spacing: .06em; transition: .3s; cursor: pointer; }
+.est-pill:hover { border-color: var(--gold); }
+.est-pill.active { background: var(--gold); color: var(--navy); font-weight: 700; }
+.est-result { background: rgba(255, 255, 255, .06); border: 1px solid rgba(196, 154, 69, .4); border-radius: 18px; padding: 30px; text-align: center; align-self: center; }
+.est-result strong { font-family: var(--font-display); font-size: 46px; color: var(--gold-2); display: block; }
+.est-result span { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: #9FB0C6; }
+
+@media (max-width: 1080px) {
+  .estimator { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .estimator { padding: 28px 22px; }
+}

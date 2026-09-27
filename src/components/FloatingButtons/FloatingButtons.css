@@ -1,0 +1,13 @@
+.float-wa {
+  position: fixed; right: 22px; bottom: 22px; z-index: 120; width: 60px; height: 60px;
+  border-radius: 50%; background: #25D366; display: grid; place-items: center;
+  box-shadow: 0 14px 34px rgba(37, 211, 102, .45); transition: .3s; border: 3px solid #fff;
+}
+.float-wa:hover { transform: scale(1.1) rotate(6deg); }
+.float-wa svg { width: 30px; height: 30px; fill: #fff; }
+.float-top {
+  position: fixed; right: 28px; bottom: 94px; z-index: 120; width: 48px; height: 48px;
+  border-radius: 50%; background: var(--navy); border: 1px solid var(--gold); color: var(--gold-2);
+  font-size: 20px; opacity: 0; visibility: hidden; transition: .4s; cursor: pointer;
+}
+.float-top.show { opacity: 1; visibility: visible; }

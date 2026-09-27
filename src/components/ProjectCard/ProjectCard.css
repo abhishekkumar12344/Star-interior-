@@ -1,0 +1,21 @@
+.proj {
+  border-radius: 18px; overflow: hidden; background: var(--navy); position: relative;
+  cursor: pointer; border: 1px solid rgba(196, 154, 69, .25); transition: .45s;
+}
+.proj:hover { transform: translateY(-8px); box-shadow: var(--shadow); }
+.proj-img { height: 360px; overflow: hidden; position: relative; }
+.proj-img img { width: 100%; height: 100%; object-fit: cover; transition: .8s; }
+.proj:hover .proj-img img { transform: scale(1.12); }
+.proj-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(4, 18, 36, .92) 8%, transparent 55%); }
+.proj-badge { position: absolute; top: 12px; left: 12px; background: var(--gold); color: var(--navy); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; padding: 6px 12px; border-radius: 100px; z-index: 2; }
+.proj-info { position: absolute; bottom: 0; left: 0; right: 0; padding: 18px; z-index: 2; color: #fff; }
+.proj-info h3 { font-family: var(--font-display); font-size: 20px; }
+.proj-info p { font-size: 13px; color: #C6D0DE; letter-spacing: .06em; }
+.proj-hover { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(7, 28, 53, .45); opacity: 0; transition: .4s; z-index: 3; }
+.proj:hover .proj-hover { opacity: 1; }
+.proj-hover span { width: 62px; height: 62px; border-radius: 50%; background: var(--gold); display: grid; place-items: center; color: var(--navy); font-size: 22px; transform: scale(.6); transition: .4s; }
+.proj:hover .proj-hover span { transform: scale(1); }
+
+@media (max-width: 640px) {
+  .proj-img { height: 280px; }
+}
